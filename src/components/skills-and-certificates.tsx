@@ -31,7 +31,7 @@ export default function SkillsAndCertificates() {
         "bg-red-500 print:bg-white",
     ]
     useEffect(() => {
-        const skillsWithColor = Config.skills.map((skill, index) => ({
+        const skillsWithColor = Config.skills.map((skill) => ({
             ...skill,
             color: colorList[Math.floor(Math.random() * colorList.length)]
         }))

@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Config } from '@/config/config'
 
 const ExperienceItem = ({ children }: { children: React.ReactNode }) => (
@@ -10,7 +10,11 @@ const ExperienceItem = ({ children }: { children: React.ReactNode }) => (
 );
 
 export default function WorkExperience() {
-    const [experienceList, setExperienceList] = useState(Config.workExperience)
+    const [experienceList, setExperienceList] = useState<{ company: string; position: string; startDate: string; endDate: string; description: string[] }[]>([])
+
+    useEffect(() => {
+        setExperienceList(Config.workExperience)
+    }, [])
 
     return (
         <div className="bg-white print:bg-white rounded-lg p-6 print:p-4">

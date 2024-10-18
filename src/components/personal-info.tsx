@@ -2,11 +2,23 @@
 import { Phone, Mail, MapPin, User } from 'lucide-react'
 import Image from 'next/image'
 import cvPhoto from '@/public/cv-photo.png'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Config } from '@/config/config'
 
 export default function PersonalInfo() {
-    const [personalInfo, setPersonalInfo] = useState(Config.personalInfo)
+    const [personalInfo, setPersonalInfo] = useState<{ name: string; phone: string; email: string; address: string; age: string; job: string; status: string }>({
+        name: "",
+        phone: "",
+        email: "",
+        address: "",
+        age: "",
+        job: "",
+        status: ""
+    })
+
+    useEffect(() => {
+        setPersonalInfo(Config.personalInfo)
+    }, [])
 
     return (
         <div className="flex justify-between items-center mb-8">

@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Config } from '@/config/config'
 
 const ProjectItem = ({ children }: { children: React.ReactNode }) => (
@@ -10,7 +10,11 @@ const ProjectItem = ({ children }: { children: React.ReactNode }) => (
 );
 
 export default function ProjectExperience() {
-    const [projectList, setProjectList] = useState(Config.projectExperience);
+    const [projectList, setProjectList] = useState<{ projectName: string; projectTime: string; projectDescription: string; projectResponsibility: string[] }[]>([])
+
+    useEffect(() => {
+        setProjectList(Config.projectExperience)
+    }, [])
 
     return (
         <div className="bg-white print:bg-white rounded-lg p-6 print:p-4">

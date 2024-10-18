@@ -1,10 +1,14 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Config } from '@/config/config';
 
 export default function EducationExperience() {
-    const [educationList, setEducationList] = useState(Config.educationExperience)
-    
+    const [educationList, setEducationList] = useState<{ school: string; degree: string; startDate: string; endDate: string }[]>([])
+
+    useEffect(() => {
+        setEducationList(Config.educationExperience)
+    }, [])
+
     return (
         <div className="bg-white print:bg-white rounded-lg p-4 print:p-2">
             <h2 className="text-base font-bold text-gray-800 print:text-black mb-2 border-b pb-1 print:border-b-black">教育经历</h2>
