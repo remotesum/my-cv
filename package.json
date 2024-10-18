@@ -13,6 +13,7 @@
   "author": "snjyor@gmail.com",
   "license": "ISC",
   "dependencies": {
+    "lucide-react": "^0.453.0",
     "next": "^14.2.15",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
