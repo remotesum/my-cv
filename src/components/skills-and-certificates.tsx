@@ -29,7 +29,7 @@ export default function SkillsAndCertificates() {
     return (
         <div className="space-y-6 print:space-y-4">
             <div className="p-4 print:p-4">
-                <h3 className="text-lg font-medium text-gray-800 print:text-black mb-4 print:mb-3">技术栈</h3>
+                <h3 className="text-base font-medium text-gray-800 print:text-black mb-4 print:mb-3">技术栈</h3>
                 <div className="flex flex-wrap gap-2 print:gap-1.5">
                     {skills.map((skill) => (
                         <Badge key={skill.name} className={`${skill.color} text-white print:text-black`}>
@@ -41,7 +41,7 @@ export default function SkillsAndCertificates() {
                     <svg className="w-5 h-5 text-green-500 print:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-gray-700 print:text-black">英语六级证书 - 能够熟练阅读专业文档</span>
+                    <span className="text-gray-700 print:text-black text-sm">英语六级证书 - 能够熟练阅读专业文档</span>
                 </div>
             </div>
         </div>

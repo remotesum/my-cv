@@ -10,8 +10,8 @@ const SkillItem = ({ children }: { children: React.ReactNode }) => (
 export default function SkillIntroduction() {
     return (
         <div className="bg-white print:bg-white rounded-lg p-6 print:p-4">
-            <h2 className="text-2xl font-bold text-gray-800 print:text-black mb-4 border-b pb-2 print:border-b-black">专业技能</h2>
-            <ul className="space-y-2 print:space-y-1">
+            <h2 className="text-base font-bold text-gray-800 print:text-black mb-4 border-b pb-2 print:border-b-black">专业技能</h2>
+            <ul className="space-y-2 print:space-y-1 text-sm">
                 <SkillItem>掌握Python编程语言，具备面向对象和函数式编程思维</SkillItem>
                 <SkillItem>熟练使用requests/selenium/undetected_chromedriver等库进行数据爬取与解析</SkillItem>
                 <SkillItem>熟悉数据分析库、机器学习库以及深度学习框架，如Pandas/Numpy/sklearn/Pytorch的使用</SkillItem>
