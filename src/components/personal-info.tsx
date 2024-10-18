@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin, User } from 'lucide-react'
 import cvPhoto from '@/public/cv-photo.png'
+import Image from 'next/image'
 
 export default function PersonalInfo() {
     return (
@@ -28,7 +29,7 @@ export default function PersonalInfo() {
                     </div>
                 </div>
             </div>
-            <img src={cvPhoto.src} alt="Profile" className="w-32 h-32 rounded-full object-cover" />
+            <Image src={cvPhoto} alt="Profile" width={128} height={128} className="rounded-full object-cover" />
         </div>
     )
 }
