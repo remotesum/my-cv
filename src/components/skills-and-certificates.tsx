@@ -1,4 +1,6 @@
-import React from 'react';
+'use client'
+import React, { useState, useEffect } from 'react';
+import { Config } from '@/config/config'
 
 function Badge({ children, className }: { children: React.ReactNode; className?: string }) {
     return (
@@ -9,22 +11,33 @@ function Badge({ children, className }: { children: React.ReactNode; className?:
 }
 
 export default function SkillsAndCertificates() {
-    const skills = [
-        { name: "Python", color: "bg-blue-500 print:bg-white" },
-        { name: "Flask", color: "bg-gray-700 print:bg-white" },
-        { name: "Pandas", color: "bg-purple-500 print:bg-white" },
-        { name: "PyTorch", color: "bg-orange-500 print:bg-white" },
-        { name: "JavaScript", color: "bg-yellow-500 print:bg-white" },
-        { name: "TypeScript", color: "bg-blue-600 print:bg-white" },
-        { name: "React", color: "bg-cyan-500 print:bg-white" },
-        { name: "Tailwind CSS", color: "bg-teal-500 print:bg-white" },
-        { name: "Next.js", color: "bg-black print:bg-white" },
-        { name: "Node.js", color: "bg-green-600 print:bg-white" },
-        { name: "Traefik", color: "bg-indigo-500 print:bg-white" },
-        { name: "Portainer", color: "bg-blue-400 print:bg-white" },
-        { name: "Docker", color: "bg-blue-700 print:bg-white" },
-        { name: "Google Services", color: "bg-red-500 print:bg-white" },
-    ];
+    const [skills, setSkills] = useState<{ name: string; color: string }[]>([])
+    const [certificates, setCertificates] = useState<{ name: string }[]>([])
+
+    const colorList = [
+        "bg-blue-500 print:bg-white",
+        "bg-gray-700 print:bg-white",
+        "bg-purple-500 print:bg-white",
+        "bg-orange-500 print:bg-white",
+        "bg-yellow-500 print:bg-white",
+        "bg-blue-600 print:bg-white",
+        "bg-cyan-500 print:bg-white",
+        "bg-teal-500 print:bg-white",
+        "bg-black print:bg-white",
+        "bg-green-600 print:bg-white",
+        "bg-indigo-500 print:bg-white",
+        "bg-blue-400 print:bg-white",
+        "bg-blue-700 print:bg-white",
+        "bg-red-500 print:bg-white",
+    ]
+    useEffect(() => {
+        const skillsWithColor = Config.skills.map((skill, index) => ({
+            ...skill,
+            color: colorList[Math.floor(Math.random() * colorList.length)]
+        }))
+        setCertificates(Config.certificates)
+        setSkills(skillsWithColor)
+    }, [])
 
     return (
         <div className="space-y-6 print:space-y-4">
@@ -37,12 +50,14 @@ export default function SkillsAndCertificates() {
                         </Badge>
                     ))}
                 </div>
-                <div className="flex items-center space-x-2 mt-4 print:mt-3">
-                    <svg className="w-5 h-5 text-green-500 print:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="text-gray-700 print:text-black text-sm">英语六级证书 - 能够熟练阅读专业文档</span>
-                </div>
+                {certificates.map((certificate, index) => (
+                    <div key={index} className="flex items-center space-x-2 mt-4 print:mt-3">
+                        <svg className="w-5 h-5 text-green-500 print:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span className="text-gray-700 print:text-black text-sm">{certificate.name}</span>
+                    </div>
+                ))}
             </div>
         </div>
     )
