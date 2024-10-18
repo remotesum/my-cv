@@ -91,7 +91,7 @@ export default function ProjectExperience() {
                         <h3 className="text-xl font-medium text-gray-900 print:text-black">全球经销商医械市场监控 - 数据负责人</h3>
                         <p className="text-sm text-gray-600 print:text-gray-700">2021.10 - 2022.03</p>
                     </div>
-                    <p className="text-gray-700 print:text-black mb-2">项目背景：本项目为医械制造企业产品上市的重要工具，帮助制造商企业发现全球各大相关产品经销商信息，助力制造商企业完成出海的"最后一公里"，让中国产品快速走向世界。</p>
+                    <p className="text-gray-700 print:text-black mb-2">项目背景：本项目为医械制造企业产品上市的重要工具，帮助制造商企业发现全球各大相关产品经销商信息，助力制造商企业完成出海的「最后一公里」，让中国产品快速走向世界。</p>
                     <p className="text-gray-700 print:text-black font-medium mb-2">职责描述：</p>
                     <ul className="space-y-2 print:space-y-1">
                         <ProjectItem>信源调研与数据评估，覆盖 40+国家总数，数据量超 60W</ProjectItem>
