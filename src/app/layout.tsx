@@ -14,18 +14,18 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Easy Resume | Data Analysis & Full Stack Development",
-  description: "A personal resume project showcasing skills in data analysis, Python, JavaScript, machine learning, and more. Includes work history, project experience, and educational background.",
+  title: "Easy Resume",
+  description: "",
   keywords: "resume, data analysis, full stack development, Python, JavaScript, machine learning, project experience",
   openGraph: {
-    title: "Easy Resume - Data Analysis & Full Stack Development",
+    title: "Easy Resume",
     description: "Explore a resume highlighting skills in data analysis, full stack development, and machine learning.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Easy Resume | Data Analysis & Full Stack Development Expert",
-    description: "View a personal resume focused on data analysis, full stack development, and machine learning skills.",
+    title: "Easy Resume",
+    description: "",
   },
 };
 

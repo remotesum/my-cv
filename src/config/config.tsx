@@ -86,7 +86,8 @@ export const Config = {
     projectExperience: [
         {
             projectName: 'Saas平台功能开发-后端开发',
-            projectTime: '2023.10 - 至今',
+            projectStartTime: '2023.10',
+            projectEndTime: '2024.05',
             projectDescription: '项目背景：面向内部员工的STEAM平台和面向用户的GRIP平台的功能开发，帮助员工更方便地为客户提供咨询服务。',
             projectResponsibility: [
                 'STEAM 可视化配置模块功能，证书申请文件管理模块等开发',
@@ -95,7 +96,8 @@ export const Config = {
         },
         {
             projectName: 'AIGC 自动生成说明书 - 项目负责人',
-            projectTime: '2023.03 - 2023.10',
+            projectStartTime: '2023.03',
+            projectEndTime: '2023.10',
             projectDescription: '项目背景：传统产品说明书定稿一般需要 2-3 个月，本项目为制造商提供符合标准的产品说明书，大大缩短说明书的撰写周期，加快产品注册流程。',
             projectResponsibility: [
                 '国家标准内容要点拆解，制定拆解规范的标准流程',
@@ -106,7 +108,8 @@ export const Config = {
         },
         {
             projectName: 'AIGC 完全自动数据分析可视化 - 个人项目',
-            projectTime: '2023.05 - 2023.07',
+            projectStartTime: '2023.05',
+            projectEndTime: '2023.07',
             projectDescription: '项目背景：通过 GPT 实现自动数据分析，数据挖掘与数据可视化全流程，完全解放数据分析可视化的工作流程，加快数据的分析速度以及挖掘更多的数据价值维度。',
             projectResponsibility: [
                 '项目架构方案设计，全自动数据分析流程方案设计',
@@ -116,7 +119,8 @@ export const Config = {
         },
         {
             projectName: 'AI 翻译软件 - 项目负责人',
-            projectTime: '2023.02 - 2023.04',
+            projectStartTime: '2023.02',
+            projectEndTime: '2023.04',
             projectDescription: '项目背景：基于 GPT 大语言模型强大的翻译能力和学习能力，为GPT提供最新、最准确、和最专业的术语和记忆库参考资料，通过 RAG 检索增强生成，弥补GPT训练数据的缺失，提高模型翻译的精准度。',
             projectResponsibility: [
                 '翻译软件技术方案设计，翻译文本的实体提取与知识库向量检索',
@@ -127,7 +131,8 @@ export const Config = {
         },
         {
             projectName: '全球法规雷达 - 项目负责人',
-            projectTime: '2022.03 - 2023.02',
+            projectStartTime: '2022.03',
+            projectEndTime: '2023.02',
             projectDescription: '项目背景：本项目在医疗器械生命周期中属于第一个时期，它为制造商的产品出海提供最新法规指南与政策，一站式获取医疗注册的准入流程和对应的最新最权威的全球法规信息，让制造商有的放矢，精准注册。',
             projectResponsibility: [
                 '成立法规资讯项目，进行整个项目的产品方案与技术方案的设计与评审',
@@ -140,7 +145,8 @@ export const Config = {
         },
         {
             projectName: '全球经销商医械市场监控 - 数据负责人',
-            projectTime: '2021.10 - 2022.03',
+            projectStartTime: '2021.10',
+            projectEndTime: '2022.03',
             projectDescription: '项目背景：本项目为医械制造企业产品上市的重要工具，帮助制造商企业发现全球各大相关产品经销商信息，助力制造商企业完成出海的「最后一公里」，让中国产品快速走向世界。',
             projectResponsibility: [
                 '信源调研与数据评估，覆盖 40+国家总数，数据量超 60W',
@@ -151,7 +157,8 @@ export const Config = {
         },
         {
             projectName: '网络通信内容智能异常检测',
-            projectTime: '2021.02 - 2021.09',
+            projectStartTime: '2021.02',
+            projectEndTime: '2021.09',
             projectDescription: '项目背景：传统通信内容的异常检测和分析通常基于固定规则或特征值匹配，无法检测出精心伪造的高级攻击行为。对于流量巨大的业务而言，伪造的攻击流量通常被大量正常业务流量淹没，导致攻击行为不被传统检测方法发现。',
             projectResponsibility: [
                 '了解数据的业务说明，异常检测算法调研，根据数据的特点评估算法适用性',
@@ -162,7 +169,8 @@ export const Config = {
         },
         {
             projectName: '告警信息关联规则挖掘',
-            projectTime: '2020.11 - 2021.02',
+            projectStartTime: '2020.11',
+            projectEndTime: '2021.02',
             projectDescription: '项目背景：为解决数据孤岛问题充分挖掘数据价值，本项目在数据挖掘过程中将系统告警信息通过攻击链路验证、行为模式等关联规则分析方法进行关联性数据挖掘。目的是要从大量告警序列中，挖掘告警事件前后关联性，用于预测告警事件的发展趋势。',
             projectResponsibility: [
                 '业务数据探索性分析，算法方案预研，基于不同角度对告警数据进行关联分析',
@@ -174,7 +182,8 @@ export const Config = {
         },
         {
             projectName: '网络通信内容智能异常检测',
-            projectTime: '2021.02 - 2021.09',
+            projectStartTime: '2021.02',
+            projectEndTime: '2021.09',
             projectDescription: '项目背景：传统通信内容的异常检测和分析通常基于固定规则或特征值匹配，无法检测出精心伪造的高级攻击行为。对于流量巨大的业务而言，伪造的攻击流量通常被大量正常业务流量淹没，导致攻击行为不被传统检测方法发现。',
             projectResponsibility: [
                 '了解数据的业务说明，异常检测算法调研，根据数据的特点评估算法适用性',
