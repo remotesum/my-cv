@@ -1,10 +1,10 @@
 export const Config = {
     personalInfo: {
-        name: "杨景煌",
-        phone: "15323342026",
-        email: "snjyor@gmail.com",
+        name: "景晖",
+        phone: "153xxxxxxxx",
+        email: "xxxxxx@gmail.com",
         address: "广东广州",
-        age: "29岁",
+        age: "18岁",
         job: "后端/数据挖掘/JS全栈",
         status: "待业"
     },
@@ -39,15 +39,15 @@ export const Config = {
     ],
     educationExperience: [
         {
-            school: "云南农业大学",
+            school: "野鸡大学",
             degree: "本科",
-            startDate: "2014.09",
-            endDate: "2018.06"
+            startDate: "20xx.09",
+            endDate: "20xx.06"
         }
     ],
     workExperience: [
         {
-            company: '普瑞纯证医疗科技（广州）有限公司',
+            company: 'xxxxx（广州）有限公司',
             position: '数据分析师 IT部',
             startDate: '2021.10',
             endDate: '2024-05-10',
@@ -59,7 +59,7 @@ export const Config = {
             ]
         },
         {
-            company: '鲤想科技有限公司',
+            company: 'xxxx有限公司',
             position: '数据挖掘工程师 IT部',
             startDate: '2020.08',
             endDate: '2021.10',
@@ -71,7 +71,7 @@ export const Config = {
             ]
         },
         {
-            company: '广州零壹沃土互联网金融信息服务有限公司',
+            company: '广州xxxx有限公司',
             position: '数据分析师 产品部',
             startDate: '2018.08',
             endDate: '2020.07',
