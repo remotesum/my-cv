@@ -54,10 +54,10 @@ npm run dev
 - `src/app/`: 包含主页面组件
 - `public/`: 存放静态资源，如图片
 
-## 自定义
+## 自定义简历内容
+只需要修改 config/config.tsx 中的配置内容即可
 
-你可以通过编辑以下文件来自定义简历内容：
-
+## 简历模块
 - `src/components/personal-info.tsx`: 个人信息
 - `src/components/skills-and-certificates.tsx`: 技术栈和证书
 - `src/components/skill-introduction.tsx`: 技能介绍
