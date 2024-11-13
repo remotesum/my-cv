@@ -1,20 +1,20 @@
 export const Config = {
     personalInfo: {
-        name: "景晖",
+        name: "热心网友",
         phone: "153xxxxxxxx",
         email: "xxxxxx@gmail.com",
         address: "广东广州",
         age: "18岁",
-        job: "后端/数据挖掘/JS全栈",
+        job: "数据挖掘/JS全栈",
         status: "待业"
     },
     skills: [
-        { name: "Python" },
-        { name: "Flask" },
-        { name: "Pandas" },
-        { name: "PyTorch" },
-        { name: "JavaScript" },
-        { name: "TypeScript" },
+        { name: "PS" },
+        { name: "AE" },
+        { name: "AI" },
+        { name: "PR" },
+        { name: "JS" },
+        { name: "TS" },
         { name: "React" },
         { name: "Tailwind CSS" },
         { name: "Next.js" },
@@ -31,18 +31,13 @@ export const Config = {
         '掌握Python编程语言，具备面向对象和函数式编程思维',
         '熟练使用requests/selenium/undetected_chromedriver等库进行数据爬取与解析',
         '熟悉数据分析库、机器学习库以及深度学习框架，如Pandas/Numpy/sklearn/Pytorch的使用',
-        '熟练使用各种 AI 大语言模型，熟悉开源大模型的微调方法与流程，AIGC和 prompt 提示工程',
-        '熟悉机器学习流程及常见算法模型，如KNN/Kmeans/DBSCAN/Apriori/FP-growth/LOF/孤立森林等算法',
-        '熟悉深度学习，自然语言处理常见算法模型，如RNN/GPT/BART/同向量/Transformer/Ner等，了解轻量化模型、预训练模型和论文模型微调复现等',
-        '熟悉Elasticsearch/Mysql等常用数据库，熟悉SQL和ES查询语法',
-        '熟悉多种向量数据库的使用，如Qdrant, Pinecone, Milvus等'
     ],
     educationExperience: [
         {
-            school: "野鸡大学",
+            school: "清华大学",
             degree: "本科",
             startDate: "20xx.09",
-            endDate: "20xx.06"
+            endDate: " 2024.11"
         }
     ],
     workExperience: [
@@ -59,15 +54,15 @@ export const Config = {
             ]
         },
         {
-            company: 'xxxx有限公司',
-            position: '数据挖掘工程师 IT部',
-            startDate: '2020.08',
-            endDate: '2021.10',
+            company: '广州xxxx有限公司',
+            position: '数据分析师 产品部',
+            startDate: '2018.08',
+            endDate: '2020.07',
             description: [
-                '深入调研算法，根据业务需求评估其适用性，精选最合适的算法进行数据挖掘。',
-                '结合具体业务，对获得的数据进行细致清洗、挖掘与分析，建立模型基线。',
-                '构建算法模型处理系统业务数据，及时发现关联或异常行为并输出相关提示信息。',
-                '输出详实数据分析报告，剖析数据的业务解释性，通过可视化展示正负样本数据差异，为业务优化提供有力的数据支持。'
+                '运用专业工具对数据进行采集、清洗和过滤处理。',
+                '结合业务特点，构建分析主题，进行深度数据分析和挖掘。',
+                '搭建数据产品，完善产品的数据体系，实现可视化展示。',
+                '制定用户分类和产品评估模型，为公司决策提供可靠的数据支持。'
             ]
         },
         {
