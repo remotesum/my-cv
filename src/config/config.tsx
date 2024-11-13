@@ -1,6 +1,6 @@
 export const Config = {
     personalInfo: {
-        name: "景晖",
+        name: "热心网友",
         phone: "153xxxxxxxx",
         email: "xxxxxx@gmail.com",
         address: "广东广州",
@@ -9,10 +9,10 @@ export const Config = {
         status: "待业"
     },
     skills: [
+        { name: "Photoshop" },
+        { name: "After Effects" },
+        { name: "Premiere" },
         { name: "Python" },
-        { name: "Flask" },
-        { name: "Pandas" },
-        { name: "PyTorch" },
         { name: "JavaScript" },
         { name: "TypeScript" },
         { name: "React" },
@@ -39,7 +39,7 @@ export const Config = {
     ],
     educationExperience: [
         {
-            school: "野鸡大学",
+            school: "清华大学",
             degree: "本科",
             startDate: "20xx.09",
             endDate: "20xx.06"
@@ -47,39 +47,15 @@ export const Config = {
     ],
     workExperience: [
         {
-            company: 'xxxxx（广州）有限公司',
-            position: '数据分析师 IT部',
-            startDate: '2021.10',
-            endDate: '2024-05-10',
-            description: [
-                '拥有多次从 0 到 1 的项目经验，领导团队成功完成项目全周期，涵盖规划、需求分析、技术选型、开发、测试和交付。通过协调沟通，确保团队高效运作，最终实现高质量项目交付。',
-                '根据数据项目或客户需求，调研数据源并爬取采集相应数据，清洗、整理、标准化为可用数据并入库；深挖数据特点，关联关系与原因分析，为客户完成合格的数据报告。',
-                '承担负责产品项目的后期维护工作，确保产品持续正常运行，为客户提供高价值数据服务。',
-                '广泛运用多种AI工具，包括AIGC内容生成、实体提取、优化项目任务处理流程，全面提升项目执行效率。'
-            ]
-        },
-        {
             company: 'xxxx有限公司',
             position: '数据挖掘工程师 IT部',
             startDate: '2020.08',
             endDate: '2021.10',
             description: [
-                '深入调研算法，根据业务需求评估其适用性，精选最合适的算法进行数据挖掘。',
+                '深入调研算法，修改修改，精选最合适的算法进行数据挖掘。',
                 '结合具体业务，对获得的数据进行细致清洗、挖掘与分析，建立模型基线。',
                 '构建算法模型处理系统业务数据，及时发现关联或异常行为并输出相关提示信息。',
                 '输出详实数据分析报告，剖析数据的业务解释性，通过可视化展示正负样本数据差异，为业务优化提供有力的数据支持。'
-            ]
-        },
-        {
-            company: '广州xxxx有限公司',
-            position: '数据分析师 产品部',
-            startDate: '2018.08',
-            endDate: '2020.07',
-            description: [
-                '运用专业工具对数据进行采集、清洗和过滤处理。',
-                '结合业务特点，构建分析主题，进行深度数据分析和挖掘。',
-                '搭建数据产品，完善产品的数据体系，实现可视化展示。',
-                '制定用户分类和产品评估模型，为公司决策提供可靠的数据支持。'
             ]
         }
     ],
